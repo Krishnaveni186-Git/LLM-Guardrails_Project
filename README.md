@@ -57,9 +57,6 @@ A typical LLM guardrails workflow follows these steps:
 - **Response Delivery**: A validated response is returned to the user, or the request is blocked or modified when necessary.
 
 
-
-
-
            User Prompt
                 |
                 v
@@ -84,7 +81,7 @@ A typical LLM guardrails workflow follows these steps:
              |                 |
              v                 v
         Block/Flag       Return Response
-```
+
 
 ## 🛠️ Technology Stack
 
@@ -93,20 +90,20 @@ AI Model
 Generates responses to user prompts. It is the core generative AI model in your application.
 Python package: google-genai
 
-2. FastAPI — Backend framework
+2. **FastAPI** — Backend framework
 Backend
 Creates API endpoints such as /generate, /health, and /docs. It connects the frontend to the AI model and guardrail functions.
 Packages: fastapi, uvicorn
 
-3. Python — Main programming language
+3. **Python** — Main programming language
 Implements input validation, calls Gemini, checks model output, and handles errors.
 
-4. HTML, CSS and JavaScript — Frontend
+4. **HTML, CSS and JavaScript** — Frontend
 - HTML: Builds the user interface.
 - CSS: Styles the form, buttons, status indicators and pipeline.
 - JavaScript: Sends prompts to FastAPI using fetch() and displays responses.
 
-5. Pydantic — Data validation
+5. **Pydantic** — Data validation
 Validates request data using models such as PromptRequest, which defines the expected prompt field.
 
 6. **Jinja2** — HTML templates
