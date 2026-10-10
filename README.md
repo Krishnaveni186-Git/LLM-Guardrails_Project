@@ -56,63 +56,9 @@ A typical LLM guardrails workflow follows these steps:
 
 - **Response Delivery**: A validated response is returned to the user, or the request is blocked or modified when necessary.
 
-- # 🛡️ LLM Guardrails: Responsible AI • Enterprise AI • AI Security
 
-## 📌 Project Overview
 
-**LLM Guardrails** is a project focused on improving the safety, reliability, and security of Large Language Model (LLM) applications. It demonstrates how guardrails can help control AI inputs and outputs, reduce harmful responses, protect sensitive information, and support responsible AI adoption in enterprise environments.
 
-As generative AI becomes more widely used, organizations need mechanisms to ensure that AI systems behave safely, follow policies, and protect users and business data. This project explores practical approaches to implementing guardrails around LLM-powered applications.
-
-## 🎯 Objectives
-
-- Promote responsible and ethical AI usage.
-- Improve the security and reliability of LLM applications.
-- Detect unsafe, harmful, or inappropriate user inputs.
-- Validate AI-generated responses before displaying them.
-- Reduce the risk of prompt injection and jailbreak attempts.
-- Protect sensitive information and personally identifiable information (PII).
-- Demonstrate enterprise-ready AI safety practices.
-
-## ✨ Key Features
-
-### 1. Input Guardrails
-- Validate and analyze user prompts.
-- Identify potentially harmful or malicious requests.
-- Detect suspicious instructions and prompt injection attempts.
-
-### 2. Output Guardrails
-- Review AI-generated responses before returning them to users.
-- Identify unsafe, inappropriate, or policy-violating content.
-- Help reduce hallucinations through validation and verification techniques.
-
-### 3. Responsible AI
-- Encourage safe, fair, and transparent AI interactions.
-- Support responsible use of generative AI.
-- Apply configurable safety policies to AI responses.
-
-### 4. AI Security
-- Explore prompt injection and jailbreak mitigation.
-- Reduce the risk of sensitive data exposure.
-- Apply security checks to LLM inputs and outputs.
-
-### 5. Enterprise AI Governance
-- Support configurable AI usage policies.
-- Encourage consistent safety checks across AI workflows.
-- Provide a foundation for monitoring and auditing AI interactions.
-
-> Note: These features describe the project's intended capabilities. Update this section to reflect the guardrails actually implemented in your code.
-
-## 🏗️ System Architecture
-
-A typical LLM guardrails workflow follows these steps:
-
-1. **User Input:** The user submits a prompt.
-2. **Input Validation:** The application checks the prompt for unsafe content, suspicious instructions, or sensitive information.
-3. **Policy Enforcement:** Configured guardrails determine whether the request can proceed.
-4. **LLM Processing:** An approved request is sent to the language model.
-5. **Output Validation:** The generated response is checked against safety and security rules.
-6. **Response Delivery:** A validated response is returned to the user, or the request is blocked or modified when necessary.
 
            User Prompt
                 |
