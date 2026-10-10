@@ -86,17 +86,15 @@ A typical LLM guardrails workflow follows these steps:
 ## 🛠️ Technology Stack
 
 1. **Google Gemini** — LLM
-AI Model
-Generates responses to user prompts. It is the core generative AI model in your application.
+- Generates responses to user prompts. It is the core generative AI model in your application.
 Python package: google-genai
 
 2. **FastAPI** — Backend framework
-Backend
-Creates API endpoints such as /generate, /health, and /docs. It connects the frontend to the AI model and guardrail functions.
+- Creates API endpoints such as /generate, /health, and /docs. It connects the frontend to the AI model and guardrail functions.
 Packages: fastapi, uvicorn
 
 3. **Python** — Main programming language
-Implements input validation, calls Gemini, checks model output, and handles errors.
+- Implements input validation, calls Gemini, checks model output, and handles errors.
 
 4. **HTML, CSS and JavaScript** — Frontend
 - HTML: Builds the user interface.
@@ -104,14 +102,14 @@ Implements input validation, calls Gemini, checks model output, and handles erro
 - JavaScript: Sends prompts to FastAPI using fetch() and displays responses.
 
 5. **Pydantic** — Data validation
-Validates request data using models such as PromptRequest, which defines the expected prompt field.
+- Validates request data using models such as PromptRequest, which defines the expected prompt field.
 
 6. **Jinja2** — HTML templates
-Renders templates/index.html for the application home page.
+- Renders templates/index.html for the application home page.
 Package: jinja2
 
 7. **python-dotenv** — Configuration and secrets
-Loads GEMINI_API_KEY from your .env file so that your API key does not need to be hardcoded in Python.
+- Loads GEMINI_API_KEY from your .env file so that your API key does not need to be hardcoded in Python.
 
 
 ⭐ If you find this project useful, consider giving the repository a star!
